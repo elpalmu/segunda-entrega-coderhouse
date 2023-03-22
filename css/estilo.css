@@ -37,16 +37,74 @@ body{
     text-align: center center;
 }
 
+#siteIntro {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
 
+#siteIntro .IntroInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid: 0px;
+}
 
+#siteIntro .introImg img1 {
+    width: 100%;
+    height: auto;
+}
 
+#siteIntro .InfoBtn .miBoton {
+    display: flex;
+    background-color: #c76a12; 
+    border: none; 
+    color: rgb(255, 255, 255); 
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 20px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
 
+}
+
+.cabeceraContacto{
+    padding: 150px 0 100px 0;
+    background-image: url(../imagenes/apps-fitness-2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.cabeceraContacto h1 {
+    color: rgb(255, 255, 255);
+    text-align: center center;
+}
 
 footer{
     background-color: rgb(36, 36, 36);
     padding: 10px 0;
     text-align: center;
 }
+
+
+
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  
+  label, input, textarea {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
 
 footer .logotipo-footer{
     width: 200px;
@@ -57,3 +115,18 @@ footer p{
     color: rgb(255, 255, 255);
 }
 
+
+
+@media (max-width: 480px) {
+    #siteIntro {
+        grid-template-columns: auto;
+        padding: 10px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    label, input, textarea {
+      width: 48%; 
+    }
+  }
